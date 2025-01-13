@@ -1,0 +1,40 @@
+/************ VerticalNavBar Css ************/
+.vertical-navbar {
+  background-color: #f7dcb4;
+  width: 8vw; /* Width of the nav bar */
+  min-width: 100px;
+  height: 100vh; /* Full height */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.nav-item {
+  color: black; /* Text color */
+  padding: 10px 0px;
+  text-decoration: none; /* Remove underline */
+  font-size: 18px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.main-content {
+  overflow-y: auto;
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.navbar-column {
+  position: sticky; /* Stick within the container */
+  top: 0; /* Stick to the top of the viewport when scrolling */
+  height: 100vh; /* Full height of the viewport */
+  padding: 0;
+}

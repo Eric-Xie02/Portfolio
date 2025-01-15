@@ -11,11 +11,11 @@ function ProjectItem({ header, description, imgSrc, reverseOrder = false }) {
         noGutters
         style={{ flexDirection: reverseOrder ? "row-reverse" : "row" }}
       >
-        <Col xs={12} md={5} className="project-image">
+        <Col xs={12} md={5}>
           <h4 className="project-header">{header}</h4>
           <p>{description}</p>
         </Col>
-        <Col xs={12} md={7} className="project-description">
+        <Col xs={12} md={7} className="project-image">
           <img src={imgSrc} alt="" style={{ width: "100%" }} />
         </Col>
       </Row>
@@ -25,7 +25,7 @@ function ProjectItem({ header, description, imgSrc, reverseOrder = false }) {
 
 export default function Projects() {
   return (
-    <div id="projects">
+    <div id="projects" className="project-wrapper">
       {projectData.map((data, index) => (
         <ProjectItem
           header={data.header}

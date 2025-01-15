@@ -6,7 +6,7 @@
 /************ VerticalNavBar Css ************/
 .vertical-navbar {
   background-color: #f7dcb4;
-  width: 8vw; /* Width of the nav bar */
+  width: 2vw; /* Width of the nav bar */
   min-width: 100px;
   height: 100vh; /* Full height */
   display: flex;
@@ -43,12 +43,12 @@
   position: sticky;
   top: 0;
   height: 100vh;
-  padding: 0;
+  padding: 0 !important;
 }
 
 .project-item {
-  border-style: solid;
-  border-color: black;
+  padding: 80px;
+  padding-left: 80px !important;
 }
 
 .project-item p {
@@ -70,7 +70,9 @@
 }
 
 .project-image {
+  padding-right: 80px !important;
 }
 
-.project-description {
+.project-wrapper {
+  margin-top: 20px;
 }

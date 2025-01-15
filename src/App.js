@@ -4,6 +4,7 @@ import Skills from "./components/Skills.js";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Projects from "./components/Projects.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -17,6 +18,7 @@ function App() {
         <Col className="main-content">
           <Banner />
           <Skills />
+          <Projects />
         </Col>
       </Row>
     </Container>

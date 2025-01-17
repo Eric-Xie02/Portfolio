@@ -3,14 +3,34 @@
   padding-top: 0;
 }
 
+.header-text-column {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+  padding: 128px !important;
+}
+
+.headshot-column {
+  padding: 0;
+  text-align: right;
+}
+
+.headshot-image {
+  height: 100vh;
+  object-fit: cover;
+}
+
 /************ VerticalNavBar Css ************/
 .vertical-navbar {
   background-color: #f7dcb4;
-  width: 2vw; /* Width of the nav bar */
+  width: 2vw;
   min-width: 100px;
-  height: 100vh; /* Full height */
+  height: 100vh;
   display: flex;
-  flex-direction: column; /* Stack items vertically */
+  flex-direction: column;
   top: 0;
   left: 0;
   padding: 10px;
@@ -75,4 +95,26 @@
 
 .project-wrapper {
   margin-top: 20px;
+}
+
+/************ Summary Css ************/
+.summary-container {
+  padding: 128px !important;
+}
+
+/************ Experience Css ************/
+.experience-item {
+  border-top: solid #777 1px;
+  border-bottom: solid #777 1px;
+}
+
+.experience-time {
+  color: #faaf52;
+  margin-bottom: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.experience-item h5 {
 }

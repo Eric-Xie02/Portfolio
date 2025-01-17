@@ -3,10 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 export default function Banner() {
   return (
     <section className="banner" id="home">
-      <Container>
+      <Container fluid style={{ padding: "0px", height: "100vh" }}>
         <Row>
-          <Col>
-            <span className="tagline">Welcome to my Portfolio</span>
+          <Col className="header-text-column">
             <h1>Hi I'm Eric!</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -15,8 +14,12 @@ export default function Banner() {
               type and scrambled it to make a type specimen book.
             </p>
           </Col>
-          <Col>
-            <img src="./assets/img/PlaceHolderHeadshot.jpg" alt="Eric Xie" />
+          <Col className="headshot-column">
+            <img
+              className="headshot-image"
+              src="./assets/img/PlaceHolderHeadshot.jpg"
+              alt="Eric Xie"
+            />
           </Col>
         </Row>
       </Container>

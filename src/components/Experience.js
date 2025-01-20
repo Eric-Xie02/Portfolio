@@ -3,6 +3,7 @@ import experienceData from "../data/experienceData";
 export default function Experience() {
   return (
     <div>
+      <h2>Experience</h2>
       {experienceData.map((obj) => (
         <ExperienceItem experienceObj={obj} />
       ))}

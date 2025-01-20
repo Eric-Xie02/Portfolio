@@ -20,6 +20,14 @@ function App() {
           <Banner />
           <Summary />
           <Projects />
+          <a
+            href="/Eric_Xie_Resume.pdf" // Ensure the file is in the `public` folder
+            target="_blank" // Opens in a new tab
+            rel="noopener noreferrer" // Improves security
+            className="resume-button"
+          >
+            Download My Resume
+          </a>
         </Col>
       </Row>
     </Container>

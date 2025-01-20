@@ -6,21 +6,47 @@
 .header-text-column {
   margin: 0;
   display: flex;
-  height: 100vh;
-  align-items: left;
   flex-direction: column;
   justify-content: center;
-  padding: 128px !important;
+  align-items: flex-start;
+  padding: 128px;
+  height: 100vh;
+  width: 50%;
+  box-sizing: border-box;
 }
 
 .headshot-column {
+  margin: 0;
   padding: 0;
-  text-align: right;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .headshot-image {
   height: 100vh;
+  width: 100%;
   object-fit: cover;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header-text-column,
+  .headshot-column {
+    width: 100%;
+    height: auto;
+  }
+
+  .header-text-column {
+    padding: 32px;
+  }
+
+  .headshot-image {
+    height: auto;
+    width: 100%;
+  }
 }
 
 /************ VerticalNavBar Css ************/
@@ -38,14 +64,16 @@
 
 .nav-item {
   color: black;
-  padding: 10px 0px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: small;
   border-radius: 4px;
   margin-bottom: 10px;
-  padding-left: 10px;
+  padding: 10px;
   transition: background-color 0.3s;
-  font-size: small;
+}
+
+.nav-item:hover {
+  background-color: #faaf52;
 }
 
 .main-content {
@@ -63,49 +91,52 @@
   position: sticky;
   top: 0;
   height: 100vh;
-  padding: 0 !important;
+  padding: 0;
 }
 
+/************ Project Css ************/
 .project-item {
   padding: 80px;
-  padding-left: 80px !important;
 }
 
 .project-item p {
-  width: 100%;
   max-width: 500px;
   color: #777;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  display: block;
 }
 
 .project-header {
   text-transform: uppercase;
   font-size: 22px;
   font-weight: 500;
-  line-height: 28px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .project-image {
-  padding-right: 80px !important;
-}
-
-.project-wrapper {
-  margin-top: 20px;
+  padding-right: 80px;
 }
 
 /************ Summary Css ************/
-.summary-container {
-  padding: 128px !important;
+.summary {
+  padding: 128px;
+}
+
+.summary h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 44px;
 }
 
 /************ Experience Css ************/
 .experience-item {
-  border-top: solid #777 1px;
-  border-bottom: solid #777 1px;
+  border-top: 1px solid #777;
+}
+
+.experience-item :last-child {
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
 }
 
 .experience-time {
@@ -117,4 +148,5 @@
 }
 
 .experience-item h5 {
+  margin: 0;
 }

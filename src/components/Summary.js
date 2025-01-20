@@ -7,7 +7,7 @@ import Container from "react-bootstrap/Container";
 
 export default function Summary() {
   return (
-    <Container fluid className="summary-container" id="Experience">
+    <Container fluid className="summary" id="Experience">
       <Row noGutters>
         <Col>
           <About />

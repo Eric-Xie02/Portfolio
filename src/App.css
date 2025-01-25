@@ -1,4 +1,31 @@
-/************ Banner Css ************/
+/* Global styles to ensure full-width, full-height layout */
+html,
+:root {
+  --accent-color: #fbb052; /* Example accent color */
+}
+
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Full-width container */
+.app-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Banner section styles */
 .banner {
   padding-top: 0;
 }
@@ -7,7 +34,7 @@
   margin: 0;
   display: flex;
   height: 100vh;
-  align-items: left;
+  align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   padding: 128px !important;
@@ -23,17 +50,32 @@
   object-fit: cover;
 }
 
-/************ VerticalNavBar Css ************/
+/* Vertical NavBar */
 .vertical-navbar {
-  background-color: #f7dcb4;
   width: 2vw;
   min-width: 100px;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  top: 0;
-  left: 0;
+  flex-direction: column; /* Keep the column layout */
+  justify-content: space-between; /* Distributes items vertically */
+  align-items: center; /* Aligns items horizontally at the center */
   padding: 10px;
+  border-right: thin solid lightgray;
+  position: relative;
+}
+
+.navbar-list-container {
+  flex-grow: 1; /* Takes up all available vertical space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers the list vertically in the available space */
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: column; /* Keeps items stacked vertically */
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-item {
@@ -48,17 +90,45 @@
   font-size: small;
 }
 
+.top-section,
+.bottom-section {
+  margin-bottom: 20px; /* Add spacing for aesthetics */
+}
+
+.vertical-text-box {
+  transform: rotate(270deg);
+  transform-origin: center;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  font-family: sans-serif;
+}
+
+.vertical-text-box h2 {
+  font-size: 20px;
+  line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.vertical-text-box div {
+  font-size: 15px;
+  line-height: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  color: gray;
+}
+
+/* Main Content Section Fixes */
 .main-content {
-  padding-left: 0;
-  overflow-y: auto;
-  height: 100%;
-}
-
-.app-container {
-  display: flex;
+  padding: 0 !important;
   height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
 }
 
+/* Sticky Navbar styling */
 .navbar-column {
   position: sticky;
   top: 0;
@@ -66,6 +136,7 @@
   padding: 0 !important;
 }
 
+/* Projects section styles */
 .project-item {
   padding: 80px;
   padding-left: 80px !important;
@@ -74,7 +145,7 @@
 .project-item p {
   width: 100%;
   max-width: 500px;
-  color: #777;
+  color: gray;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -97,24 +168,63 @@
   margin-top: 20px;
 }
 
-/************ Summary Css ************/
+/* Summary section styles */
 .summary-container {
   padding: 128px !important;
 }
 
-/************ Experience Css ************/
+.about-col {
+  max-width: 600px !important;
+}
+
+.experience-col {
+  max-width: 600px !important;
+}
+
+/* Experience section styles */
 .experience-item {
-  border-top: solid #777 1px;
-  border-bottom: solid #777 1px;
+  border-top: solid gray 1px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.experience-item-last {
+  border-bottom: solid gray 1px;
 }
 
 .experience-time {
-  color: #faaf52;
+  color: var(--accent-color);
   margin-bottom: 4px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Rubik;
   font-size: 13px;
   line-height: 20px;
 }
 
-.experience-item h5 {
+.social-media-button {
+  size: 30;
+  color: var(--accent-color);
+}
+
+.kaushan-script-regular {
+  font-family: "Kaushan Script", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.initials-logo {
+  background-color: var(--accent-color); /* Use CSS variable for accent color */
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* No quotes needed here */
+  font-family: "Kaushan Script", cursive;
+  font-size: 18px; /* No quotes needed */
+  text-align: center; /* No quotes needed */
+  line-height: 50px; /* This should match your font-size */
+  user-select: none; /* No quotes needed */
+  transition: background-color 0.3s, color 0.3s; /* No quotes needed */
+}
+
+.resume-button {
+  color: var(--accent-color);
 }

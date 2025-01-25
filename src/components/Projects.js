@@ -4,7 +4,13 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import projectData from "../data/projectData";
 
-function ProjectItem({ header, description, imgSrc, reverseOrder = false }) {
+function ProjectItem({
+  header,
+  description,
+  imgSrc,
+  skills,
+  reverseOrder = false,
+}) {
   return (
     <Container fluid className="project-item">
       <Row
@@ -13,7 +19,15 @@ function ProjectItem({ header, description, imgSrc, reverseOrder = false }) {
       >
         <Col xs={12} md={5}>
           <h4 className="project-header">{header}</h4>
-          <p>{description}</p>
+          <div>
+            {skills.map((skill, i) => (
+              <span>
+                {skill}
+                {i !== skills.length - 1 ? " • " : ""}
+              </span>
+            ))}
+          </div>
+          <p style={{ marginTop: "30px" }}>{description}</p>
         </Col>
         <Col xs={12} md={7} className="project-image">
           <img src={imgSrc} alt="" style={{ width: "100%" }} />
@@ -31,7 +45,8 @@ export default function Projects() {
           header={data.header}
           description={data.description}
           imgSrc={data.imageSource}
-          reverseOrder={index % 2}
+          skills={data.skills}
+          reverseOrder={!(index % 2)}
         />
       ))}
     </div>

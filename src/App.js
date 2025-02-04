@@ -7,6 +7,7 @@ import Projects from "./components/Projects.js";
 import Summary from "./components/Summary.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import { Element } from "react-scroll";
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
           <VerticalNavBar />
         </Col>
         <Col className="main-content">
-          <Banner />
+          <Element name="home">
+            <Banner />
+          </Element>
           <Summary />
           <Projects />
         </Col>

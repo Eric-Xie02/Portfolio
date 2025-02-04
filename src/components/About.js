@@ -13,7 +13,19 @@ export default function About() {
         engineering abilities to create impactful work.
         <br />
         <br />
-        asd
+        I feel most comfortable working with C++ and Python, leveraging them for
+        both personal and academic projects. For frontend development, I have
+        experience with JavaScript, HTML, and CSS, and I have built applications
+        using React—including this website. Through my coursework and projects,
+        I have also gained experience picking up new programming languages
+        quickly, including Verilog for hardware design and MATLAB for numerical
+        computing. I enjoy applying these skills to build efficient and
+        intuitive software solutions while continuously expanding my technical
+        expertise.
+        <br />
+        <br />
+        In my free time, I enjoy reading books, watching soccer, and playing
+        board games with friends.
         <br />
         <br />
         <a
@@ -22,7 +34,7 @@ export default function About() {
           rel="noopener noreferrer"
           className="resume-button"
         >
-          Take a copy of my resume
+          Have a copy of my resume
         </a>
       </p>
     </div>

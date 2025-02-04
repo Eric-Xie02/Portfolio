@@ -27,7 +27,9 @@ function ProjectItem({
               </span>
             ))}
           </div>
-          <p style={{ marginTop: "30px" }}>{description}</p>
+          <p style={{ marginTop: "30px", whiteSpace: "pre-line" }}>
+            {description}
+          </p>
         </Col>
         <Col xs={12} md={7} className="project-image">
           <img src={imgSrc} alt="" style={{ width: "100%" }} />

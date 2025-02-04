@@ -1,11 +1,11 @@
 /* Global styles to ensure full-width, full-height layout */
 html,
 :root {
-  --accent-color: #fbb052; /* Example accent color */
+  --accent-color: #0b705c;
 }
 
 html {
-  scroll-behavior: smooth; /* Enables smooth scrolling */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -37,7 +37,8 @@ body {
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  padding: 128px !important;
+  padding: 200px !important;
+  margin-top: -100px !important;
 }
 
 .headshot-column {
@@ -49,32 +50,37 @@ body {
   height: 100vh;
   object-fit: cover;
 }
-
 /* Vertical NavBar */
 .vertical-navbar {
   width: 2vw;
   min-width: 100px;
   height: 100vh;
   display: flex;
-  flex-direction: column; /* Keep the column layout */
-  justify-content: space-between; /* Distributes items vertically */
-  align-items: center; /* Aligns items horizontally at the center */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
   border-right: thin solid lightgray;
   position: relative;
 }
 
+.vertical-navbar a {
+  margin-bottom: 20px;
+  font-family: "Rubik";
+}
+
 .navbar-list-container {
-  flex-grow: 1; /* Takes up all available vertical space */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centers the list vertically in the available space */
+  justify-content: flex-start;
+  height: 60%;
+  padding-top: 20px;
 }
 
 .navbar-list {
   display: flex;
-  flex-direction: column; /* Keeps items stacked vertically */
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -92,7 +98,7 @@ body {
 
 .top-section,
 .bottom-section {
-  margin-bottom: 20px; /* Add spacing for aesthetics */
+  margin-bottom: 20px;
 }
 
 .vertical-text-box {
@@ -157,7 +163,7 @@ body {
   font-size: 22px;
   font-weight: 500;
   line-height: 28px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Rubik, Arial, Helvetica, sans-serif;
 }
 
 .project-image {
@@ -212,17 +218,17 @@ body {
 }
 
 .initials-logo {
-  background-color: var(--accent-color); /* Use CSS variable for accent color */
+  background-color: var(--accent-color);
   color: white;
   width: 50px;
   height: 50px;
-  border-radius: 50%; /* No quotes needed here */
+  border-radius: 50%;
   font-family: "Kaushan Script", cursive;
-  font-size: 18px; /* No quotes needed */
-  text-align: center; /* No quotes needed */
-  line-height: 50px; /* This should match your font-size */
-  user-select: none; /* No quotes needed */
-  transition: background-color 0.3s, color 0.3s; /* No quotes needed */
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
+  user-select: none;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .resume-button {

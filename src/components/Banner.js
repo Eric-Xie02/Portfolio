@@ -3,19 +3,21 @@ import { Container, Row, Col } from "react-bootstrap";
 export default function Banner() {
   return (
     <section className="banner" id="home">
-      <Container
-        fluid
-        style={{ padding: "0px", height: "100vh", font: "Kaushan Script" }}
-      >
+      <Container fluid style={{ padding: "0px", height: "100vh" }}>
         <Row>
           <Col className="header-text-column">
-            <h1>Hi I'm Eric!</h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+            <h1 style={{ fontFamily: "Rubik", fontSize: "50px" }}>
+              Hi I'm Eric!
+            </h1>
+            <p style={{ color: "gray", maxWidth: "600px" }}>
+              I am a Boston University graduate with a degree in computer
+              engineering with a focus on software development.
             </p>
+            <img
+              style={{ width: "300px", height: "auto" }}
+              src="./assets/img/BUEngLogo.jpg"
+              alt=" BU Logo"
+            />
           </Col>
           <Col className="headshot-column">
             <img

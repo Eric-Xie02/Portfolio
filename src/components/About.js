@@ -36,7 +36,6 @@ export default function About() {
         >
           Have a copy of my resume
         </a>
-      </p>
     </div>
   );
 }

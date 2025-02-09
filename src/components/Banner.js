@@ -11,7 +11,7 @@ export default function Banner() {
             </h1>
             <p style={{ color: "gray", maxWidth: "600px" }}>
               I am a Boston University graduate with a degree in computer
-              engineering with a focus on software development.
+              engineering and a focus on software development.
             </p>
             <img
               style={{ width: "300px", height: "auto" }}

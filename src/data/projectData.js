@@ -29,7 +29,7 @@ const projectData = [
     the conversations, and the level of grammatical accuracy. 
     `,
     imageSource: "./assets/img/LangolioCollage.png",
-    skills: [""],
+    skills: [],
   },
   {
     header: "3duf",

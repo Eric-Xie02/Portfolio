@@ -19,15 +19,23 @@ function ProjectItem({
       >
         <Col xs={12} md={5}>
           <h4 className="project-header">{header}</h4>
-          <div>
-            {skills.map((skill, i) => (
-              <span>
-                {skill}
-                {i !== skills.length - 1 ? " • " : ""}
-              </span>
-            ))}
-          </div>
-          <p style={{ marginTop: "30px", whiteSpace: "pre-line" }}>
+          {skills.length > 0 && (
+            <div>
+              {skills.map((skill, i) => (
+                <span key={i}>
+                  {skill}
+                  {i !== skills.length - 1 ? " • " : ""}
+                </span>
+              ))}
+            </div>
+          )}
+          <p
+            style={{
+              marginTop: "30px",
+              whiteSpace: "pre-line",
+              marginBottom: "30px",
+            }}
+          >
             {description}
           </p>
         </Col>

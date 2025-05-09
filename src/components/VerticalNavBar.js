@@ -24,10 +24,6 @@ export default function VerticalNavBar() {
       <div className="bottom-section">
         <SocialMediaButton />
       </div>
-      {/* <div className="vertical-text-box">
-        <h2 className="single-line">Eric Xie</h2>
-        <div className="single-line">Software Engineer</div>
-      </div> */}
     </div>
   );
 }

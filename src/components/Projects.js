@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import projectData from "../data/projectData";
+import CompositeImage from "./CompositeImage";
 
 function ProjectItem({
   header,
@@ -40,7 +41,11 @@ function ProjectItem({
           </p>
         </Col>
         <Col xs={12} md={7} className="project-image">
-          <img src={imgSrc} alt="" style={{ width: "100%" }} />
+          {imgSrc.length > 1 ? (
+            <CompositeImage images={imgSrc} backgroundColor="dbeafe" />
+          ) : (
+            <img src={imgSrc} alt="" style={{ width: "100%" }} />
+          )}
         </Col>
       </Row>
     </Container>

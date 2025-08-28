@@ -11,7 +11,7 @@ const projectData = [
     real-time messaging. I focused on creating an intuitive, responsive design that made the platform visually appealing \
     and easy to navigate while supporting structured classroom learning. The project culminated in our team successfully \
     delivering a product to our client that met all of the project objectives`,
-    imageSource: "./assets/img/LangolioHome.png",
+    imageSource: ["./assets/img/LangolioLanding.png"],
     skills: ["React", "Python", "FastAPI, MongoDB"],
   },
   {
@@ -28,7 +28,12 @@ const projectData = [
     goals. The statistics are stored in MongoDB, including metrics such as the number of messages exchanged, the languages used in \
     the conversations, and the level of grammatical accuracy. 
     `,
-    imageSource: "./assets/img/LangolioCollage.png",
+    imageSource: [
+      "./assets/img/LangolioHome.png",
+      "./assets/img/LangolioLogin.png",
+      "./assets/img/LangolioChat.png",
+      "./assets/img/LangolioStats.png",
+    ],
     skills: [],
   },
   {
@@ -43,7 +48,7 @@ const projectData = [
     on the geometric center, providing more uniform behavior across different components. These improvements expanded 3duf’s capabilities, \
     allowing users to design a wider range of microfluidic devices more efficiently while maintaining precision and consistency in their layouts.
 `,
-    imageSource: "./assets/img/3duf.png",
+    imageSource: ["./assets/img/3duf.png"],
     skills: ["TypeScript", "Paper.js", "JSON"],
   },
   {
@@ -59,7 +64,7 @@ const projectData = [
     Through this experience, I gained insight into working with a large, pre-existing codebase, understanding its structure, and making meaningful \
     contributions without disrupting existing functionality. I also developed a stronger grasp of data flow in complex software pipelines and the \
     importance of robust integration between interconnected tools.`,
-    imageSource: "./assets/img/Fluigi.png",
+    imageSource: ["./assets/img/Fluigi.png"],
     skills: ["Python", "JSON Processing", "Design Automation"],
   },
 ];

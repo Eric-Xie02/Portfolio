@@ -42,25 +42,7 @@ const projectData = [
     skills: ["Python", "JSON Processing", "Design Automation"],
     links: [],
   },
-  {
-    header: "Wild Oasis Staff",
-    description: `The Wild Oasis Staff Portal is directly connected to the guest-facing site, providing hotel employees with the tools needed to manage and oversee reservations created by guests. Together, the two portals form a complete system for simulating hotel operations, with data synchronized through a shared PostgreSQL database.
 
-    Staff can view and manage all cabins through a table interface that displays pricing, discounts, photos, and availability, with full support for creating, updating, and deleting entries. A parallel booking management system allows employees to filter and sort reservations, confirm check-ins and checkouts, and verify guest payments. The portal also includes app-wide settings, where staff can configure policies such as breakfast prices and minimum or maximum booking nights. To support decision making, the dashboard provides real-time statistics on occupancy, revenue, and daily activity, all presented in a clean, responsive interface with dark mode for usability.`,
-    imageSource: [
-      "./assets/img/WildOasisStaffHome.png",
-      "./assets/img/WildOasisStaffBookings.png",
-      "./assets/img/WildOasisStaffCabins.png",
-      "./assets/img/WildOasisStaffAccount.png",
-    ],
-    skills: ["Python", "JSON Processing", "Design Automation"],
-    links: [
-      {
-        url: "https://wildoasis-staff.com",
-        text: "Wild Oasis Staff",
-      },
-    ],
-  },
   {
     header: "Wild Oasis — Guest App",
     description: `The Wild Oasis Guest Portal is a demo hotel web application designed to simulate the experience of discovering, booking, and managing cabin stays. Built as part of a full-stack practice project, it recreates the workflows of a real guest-facing site while emphasizing clean design and a smooth user experience.
@@ -73,11 +55,44 @@ const projectData = [
       "./assets/img/WildOasisGuestCabins.png",
       "./assets/img/WildOasisGuestReservations.png",
     ],
-    skills: ["Python", "JSON Processing", "Design Automation"],
+    skills: ["React", "Next.js", "Tailwind"],
     links: [
       {
         url: "https://www.wildoasis-guest.com/",
         text: "Wild Oasis Guest",
+      },
+    ],
+  },
+  {
+    header: "Wild Oasis — Staff App",
+    description: `The Wild Oasis Staff Portal is directly connected to the guest-facing site, providing hotel employees with the tools needed to manage and oversee reservations created by guests. Together, the two portals form a complete system for simulating hotel operations, with data synchronized through a shared PostgreSQL database.
+
+    Staff can view and manage all cabins through a table interface that displays pricing, discounts, photos, and availability, with full support for creating, updating, and deleting entries. A parallel booking management system allows employees to filter and sort reservations, confirm check-ins and checkouts, and verify guest payments. The portal also includes app-wide settings, where staff can configure policies such as breakfast prices and minimum or maximum booking nights. To support decision making, the dashboard provides real-time statistics on occupancy, revenue, and daily activity, all presented in a clean, responsive interface with dark mode for usability.`,
+    imageSource: [
+      "./assets/img/WildOasisStaffHome.png",
+      "./assets/img/WildOasisStaffBookings.png",
+      "./assets/img/WildOasisStaffCabins.png",
+      "./assets/img/WildOasisStaffAccount.png",
+    ],
+    skills: ["React", "React Router"],
+    links: [
+      {
+        url: "https://wildoasis-staff.com",
+        text: "Wild Oasis Staff",
+      },
+    ],
+  },
+  {
+    header: "WorldWise",
+    description: `WorldWise is a personal project I built to combine my love of travel with web development. It's a travel tracking application that allows users to record and visualize the places they’ve visited around the world. At its core is an interactive map, where users can mark destinations, add notes, and keep a personal travel log. The app makes it easy to look back on past adventures while also planning future trips.
+
+    Key features include searching and selecting cities, viewing details about each location, and adding personal notes to capture memories. With an intuitive interface and clean design, it's simple and enjoyable to navigate, making travel history both interactive and personal.`,
+    imageSource: ["./assets/img/Worldwise.png"],
+    skills: ["React", "Leaflet"],
+    links: [
+      {
+        url: "https://www.go-worldwise.com/",
+        text: "Worldwise",
       },
     ],
   },

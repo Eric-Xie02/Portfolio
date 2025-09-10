@@ -1,7 +1,7 @@
 const experienceData = [
   {
     startDate: "June 2023",
-    endDate: "December 2024",
+    endDate: "August 2025",
     company: "CIDAR Labs",
     title: "Undergraduate Researcher- Software Developer",
     description: `Contributed to the development of 3duf, a visual design tool for microfluidic devices, and Neptune,

@@ -10,6 +10,7 @@ function ProjectItem({
   description,
   imgSrc,
   skills,
+  links,
   reverseOrder = false,
 }) {
   return (
@@ -39,6 +40,19 @@ function ProjectItem({
           >
             {description}
           </p>
+          {links.map((link, i) => (
+            <span key={i}>
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "var(--accent-color)" }}
+              >
+                {link.text}
+              </a>
+              {i !== links.length - 1 && " | "}
+            </span>
+          ))}
         </Col>
         <Col xs={12} md={7} className="project-image">
           {imgSrc.length > 1 ? (
@@ -61,6 +75,7 @@ export default function Projects() {
           description={data.description}
           imgSrc={data.imageSource}
           skills={data.skills}
+          links={data.links}
           reverseOrder={!(index % 2)}
         />
       ))}

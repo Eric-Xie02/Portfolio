@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "motion/react";
 const imageTransition = { duration: 0.5, ease: "easeInOut" };
 
 function CompositeImage({ backgroundColor, images }) {
-  console.log(images);
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
@@ -12,18 +11,25 @@ function CompositeImage({ backgroundColor, images }) {
       style={{
         position: "relative",
         display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        gridTemplateRows: "1fr 1fr",
-        gap: "5px",
+        gridTemplateColumns: "repeat(2, 1fr)", // 2 columns
+        gridTemplateRows: "repeat(2, 1fr)", // 2 rows
         width: "100%",
         height: "0",
-        paddingBottom: "52.6%",
+        paddingBottom: "52.6%", // maintain aspect ratio
         backgroundColor,
         overflow: "hidden",
+        gap: 0, // remove spacing
       }}
     >
       {images.map((image) => (
-        <div key={image} style={{ position: "relative" }}>
+        <div
+          key={image}
+          style={{
+            position: "relative",
+            width: "100%",
+            height: "100%",
+          }}
+        >
           {selectedImage !== image && (
             <motion.img
               layoutId={image}
@@ -33,8 +39,9 @@ function CompositeImage({ backgroundColor, images }) {
               style={{
                 width: "100%",
                 height: "100%",
-                objectFit: "fill",
+                objectFit: "cover", // fill cell completely
                 cursor: "pointer",
+                display: "block",
               }}
               onClick={() => setSelectedImage(image)}
             />
@@ -53,7 +60,7 @@ function CompositeImage({ backgroundColor, images }) {
               width: "100%",
               height: "100%",
               zIndex: 10,
-              backgroundColor: backgroundColor,
+              backgroundColor,
             }}
           >
             <motion.img
@@ -64,7 +71,7 @@ function CompositeImage({ backgroundColor, images }) {
               style={{
                 width: "100%",
                 height: "100%",
-                objectFit: "fill",
+                objectFit: "cover",
                 cursor: "pointer",
               }}
               onClick={() => setSelectedImage(null)}

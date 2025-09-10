@@ -30,11 +30,20 @@ export default function About() {
         <br />
         <a
           href={"Eric_Xie_Resume.pdf"}
-          target="_blank" // Open in a new tab
+          target="_blank"
           rel="noopener noreferrer"
           className="resume-button"
         >
           Have a copy of my resume
+        </a>{" "}
+        or{" "}
+        <a
+          href={"https://www.linkedin.com/in/ericxie02/"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="resume-button"
+        >
+          Connect with me on LinkedIn
         </a>
       </p>
     </div>

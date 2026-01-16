@@ -88,7 +88,7 @@ const projectData = [
 
     Key features include searching and selecting cities, viewing details about each location, and adding personal notes to capture memories. With an intuitive interface and clean design, it's simple and enjoyable to navigate, making travel history both interactive and personal.`,
     imageSource: ["./assets/img/Worldwise.png"],
-    skills: ["React", "Leaflet"],
+    skills: ["React", "Mapbox"],
     links: [
       {
         url: "https://www.go-worldwise.com/",

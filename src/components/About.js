@@ -29,7 +29,7 @@ export default function About() {
         <br />
         <br />
         <a
-          href={"Eric_Xie_Resume.pdf"}
+          href={"EricXieResume.pdf"}
           target="_blank"
           rel="noopener noreferrer"
           className="resume-button"

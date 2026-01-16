@@ -3,10 +3,8 @@ const experienceData = [
     startDate: "June 2023",
     endDate: "August 2025",
     company: "CIDAR Labs",
-    title: "Undergraduate Researcher- Software Developer",
-    description: `Contributed to the development of 3duf, a visual design tool for microfluidic devices, and Neptune,
-     a toolchain for the microfluidic design workflow, by adding new features and ensuring compatibility between software
-     in the toolchain.`,
+    title: "Research Software Engineer",
+    description: `Started as a full-time summer intern, continued part-time during the academic year, and returned as a fellow after graduation to complete ongoing projects. Contributed to the development of 3duf, a visual design tool for microfluidic devices, and Neptune, a design automation toolchain, by implementing new features and ensuring compatibility across the workflow.`,
   },
   {
     startDate: "September 2023",

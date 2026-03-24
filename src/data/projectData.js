@@ -42,7 +42,32 @@ const projectData = [
     skills: ["Python", "JSON Processing", "Design Automation"],
     links: [],
   },
+  {
+    header: "WorldWise",
+    description: `WorldWise is a personal project I built to combine my love of travel with web development. It's a travel tracking application that allows users to record and visualize the places they’ve visited around the world. At its core is an interactive map, where users can mark destinations, add notes, and keep a personal travel log. The app makes it easy to look back on past adventures while also planning future trips.
 
+    Key features include searching and selecting cities, viewing details about each location, and adding personal notes to capture memories. With an intuitive interface and clean design, it's simple and enjoyable to navigate, making travel history both interactive and personal.`,
+    imageSource: ["./assets/img/Worldwise.png"],
+    skills: ["React", "Mapbox"],
+    links: [
+      {
+        url: "https://www.go-worldwise.com/",
+        text: "Worldwise",
+      },
+    ],
+  },
+  {
+    header: "Flight Risk Analyzer",
+    description: `The Flight Route Risk Analyzer is a full-stack travel safety tool built to help users assess the risk level of their upcoming flights. The backend is a Spring Boot REST API deployed on Railway with a PostgreSQL database, featuring JWT-based authentication, trip management, and real-time risk evaluation powered by U.S. State Department travel advisories. Users can register, create trips by entering flight details, and receive a risk score with contributing factors for each route. The app also integrates a weekly email digest via Mailtrap to keep travelers informed. The React frontend, scaffolded with Claude Code, was deployed to Vercel and provides a clean interface for interacting with the API.`,
+    imageSource: ["./assets/img/FlightRiskTripDetails.png"],
+    skills: ["Spring Boot", "Java", "PostgreSQL", "JWT", "React", "Railway"],
+    links: [
+      {
+        url: "https://travel-risk-frontend.vercel.app",
+        text: "Flight Route Risk Analyzer",
+      },
+    ],
+  },
   {
     header: "Wild Oasis — Guest App",
     description: `The Wild Oasis Guest Portal is a demo hotel web application designed to simulate the experience of discovering, booking, and managing cabin stays. Built as part of a full-stack practice project, it recreates the workflows of a real guest-facing site while emphasizing clean design and a smooth user experience.
@@ -79,20 +104,6 @@ const projectData = [
       {
         url: "https://wildoasis-staff.com",
         text: "Wild Oasis Staff",
-      },
-    ],
-  },
-  {
-    header: "WorldWise",
-    description: `WorldWise is a personal project I built to combine my love of travel with web development. It's a travel tracking application that allows users to record and visualize the places they’ve visited around the world. At its core is an interactive map, where users can mark destinations, add notes, and keep a personal travel log. The app makes it easy to look back on past adventures while also planning future trips.
-
-    Key features include searching and selecting cities, viewing details about each location, and adding personal notes to capture memories. With an intuitive interface and clean design, it's simple and enjoyable to navigate, making travel history both interactive and personal.`,
-    imageSource: ["./assets/img/Worldwise.png"],
-    skills: ["React", "Mapbox"],
-    links: [
-      {
-        url: "https://www.go-worldwise.com/",
-        text: "Worldwise",
       },
     ],
   },
